@@ -29,7 +29,7 @@ const AboutPage = () => {
         {
 
           (userLoginedData.isAdmin)? (
-            <h1>user is admin see admin panel <NavLink to="/admin"> <button>Admin Btn</button> </NavLink> </h1>
+            <h1>user is admin see admin panel <NavLink className="bg-yellow-400 border-4 border-black" to="/admin"> <button>Admin Btn</button> </NavLink> </h1>
             ) :(
               <h1>user is not an admin</h1>
               )

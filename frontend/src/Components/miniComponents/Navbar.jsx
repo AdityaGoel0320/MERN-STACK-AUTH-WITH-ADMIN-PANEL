@@ -46,17 +46,7 @@ const Navbar = () => {
               CONTACT
             </NavLink>
 
-            {isLoggedIn && isAdmin ? (
-              <NavLink
-                to="/admin/users"
-                activeClassName="text-white"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-              >
-                DASHBOARD
-              </NavLink>
-            ) :(
-              ""
-            )}
+            
           </div>
           <div>
             {!isLoggedIn ? (
