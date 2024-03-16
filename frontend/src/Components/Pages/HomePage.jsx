@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { useAuthContextApi } from '../store/auth';
-import { backendUrl } from '../assets/FrontendUtils';
+import { useAuthContextApi } from '../../store/auth';
+import { backendUrl } from '../../assets/FrontendUtils';
 import TailwindcssLayout from './TailwindcssLayout';
 
 const Home = () => {

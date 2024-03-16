@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { backendUrl } from '../assets/FrontendUtils';
-import { useAuthContextApi } from '../store/auth';
+import { backendUrl } from '../../assets/FrontendUtils';
+import { useAuthContextApi } from '../../store/auth';
 import { NavLink} from 'react-router-dom';
 
 const AdminUser = () => {

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import ContactPage from './Pages/ContactPage';
-import LoginPage from './Pages/LoginPage';
-import RegisterPage from './Pages/RegisterPage';
-import AboutPage from './Pages/AboutPage';
-import ServicePage from './Pages/ServicePage';
-import Error404Page from './Pages/Error404Page';
+import HomePage from './Components/Pages/HomePage';
+import ContactPage from './Components/Pages/ContactPage';
+import LoginPage from './Components/Pages/LoginPage';
+import RegisterPage from './Components/Pages/RegisterPage';
+import AboutPage from './Components/Pages/AboutPage';
+import ServicePage from './Components/Pages/ServicePage';
+import Error404Page from './Components/Pages/Error404Page';
 import Footer from './Components/miniComponents/Footer';
 import "./App.css";
-import Logout from './Pages/Logout';
+import Logout from './Components/Pages/Logout';
 import Admin_Layout from './Components/Layouts/Admin_Layout';
-import AdminUser from './Pages/AdminUser';
-import AdminContacts from './Pages/AdminContacts';
-import AdminServices from './Pages/AdminServices';
-import AdminUpdate from './Pages/AdminUpdate';
+import AdminUser from './Components/Pages/AdminUser';
+import AdminContacts from './Components/Pages/AdminContacts';
+import AdminServices from './Components/Pages/AdminServices';
+import AdminUpdate from './Components/Pages/AdminUpdate';
 import Navbar from './Components/miniComponents/Navbar';
 
 const App = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { backendUrl } from '../assets/FrontendUtils';
-import { useAuthContextApi } from '../store/auth';
+import { backendUrl } from '../../assets/FrontendUtils';
+import { useAuthContextApi } from '../../store/auth';
 
 const AdminUpdate = () => {
     const { AuthorisationToken } = useAuthContextApi();

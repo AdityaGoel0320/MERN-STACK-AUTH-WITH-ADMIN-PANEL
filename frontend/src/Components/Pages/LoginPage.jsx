@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom"
-import { backendUrl } from '../assets/FrontendUtils';
-import { useAuthContextApi } from '../store/auth';
+import { backendUrl } from '../../assets/FrontendUtils';
+import { useAuthContextApi } from '../../store/auth';
 
 
 import { ToastContainer, toast } from 'react-toastify';

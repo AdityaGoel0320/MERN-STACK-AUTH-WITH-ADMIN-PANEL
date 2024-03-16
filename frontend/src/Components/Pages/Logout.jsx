@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 
 import { Navigate } from 'react-router-dom'
-import { useAuthContextApi } from '../store/auth';
+import { useAuthContextApi } from '../../store/auth';
 
 
 import { ToastContainer, toast } from 'react-toastify';

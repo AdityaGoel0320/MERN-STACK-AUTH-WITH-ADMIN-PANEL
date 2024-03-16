@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuthContextApi } from '../store/auth';
+import { useAuthContextApi } from '../../store/auth';
 import {NavLink ,  Route, Routes } from 'react-router-dom';
 
 
