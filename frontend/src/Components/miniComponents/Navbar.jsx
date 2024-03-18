@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { useAuthContextApi } from '../../store/auth';
 
 const Navbar = () => {
-  let { isLoggedIn, userLoginedData  , isAdmin} = useAuthContextApi();
+  let { isLoggedIn, userLoginedData, isAdmin } = useAuthContextApi();
 
+
+  console.log("isAdmin ========" + userLoginedData)
 
 
 
@@ -46,7 +48,7 @@ const Navbar = () => {
               CONTACT
             </NavLink>
 
-            
+
           </div>
           <div>
             {!isLoggedIn ? (
@@ -68,12 +70,12 @@ const Navbar = () => {
               <div>
 
 
-                <a
-                  href="/about"
+                <NavLink
+                  to="/about"
                   className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0 ml-2"
                 >
                   ABOUT
-                </a>
+                </NavLink>
 
                 <NavLink
                   to="/logout"
@@ -81,6 +83,17 @@ const Navbar = () => {
                 >
                   LOGOUT
                 </NavLink>
+
+                {
+                  (isAdmin) ? (
+                    <NavLink
+                      to="/dash"
+                      className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
+                    >
+                      DASH
+                    </NavLink>) : null
+                }
+
 
               </div>
             )}

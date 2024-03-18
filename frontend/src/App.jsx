@@ -16,6 +16,7 @@ import AdminContacts from './Components/Pages/AdminContacts';
 import AdminServices from './Components/Pages/AdminServices';
 import AdminUpdate from './Components/Pages/AdminUpdate';
 import Navbar from './Components/miniComponents/Navbar';
+import DasgBoard from './Components/Pages/DasgBoard';
 
 const App = () => {
   return (
@@ -29,8 +30,12 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dash" element={<DasgBoard/>} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/logout" element={<Logout />} />
+
+
+
 
 
           <Route path = "users/:id/edit"  element = {<AdminUpdate/>} />
